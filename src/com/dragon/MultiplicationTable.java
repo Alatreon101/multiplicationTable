@@ -8,9 +8,21 @@ import java.util.Scanner;
 public class MultiplicationTable {
     public static void main(String[] args) {
 
+        System.out.println("Введите число от 1 до 10 для получения результата " +
+                "умножения определенного числа, либо введите - 111 для получения всех таблицы.");
+
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
+        //String table = sc.nextLine();
 
+//        if ("all".equals(table)) {
+//            for (int i = 1; i <= 10; i++) {
+//                for (int j = 1; j <= 10; j++) {
+//                    System.out.println(i + " * " + j + " = " + (i * j) + " ");
+//                }
+//                System.out.println();
+//            }
+//        }
         switch (number) {
             case 1:
                 for (int i = 1; i <= 1; i++) {
@@ -86,6 +98,14 @@ public class MultiplicationTable {
                 break;
             case 10:
                 for (int i = 10; i <= 10; i++) {
+                    for (int j = 1; j <= 10; j++) {
+                        System.out.println(i + " * " + j + " = " + (i * j) + " ");
+                    }
+                    System.out.println();
+                }
+                break;
+            case 111:
+                for (int i = 1; i <= 10; i++) {
                     for (int j = 1; j <= 10; j++) {
                         System.out.println(i + " * " + j + " = " + (i * j) + " ");
                     }
